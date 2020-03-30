@@ -1,9 +1,22 @@
 Object tracker
-=
+===
 
 This class is a decorator that measures the runtime and used memory of dynamic methods.
 
+Install
+---
+
+The preferred way to install this extension is composer.
+You can download composer from the official website: "http://getcomposer.org/download/".
+
+To connect the library to the project, use:
+> composer require danishigor/object-tracker
+
+or add this line to the "require" section of your composer.json:
+> "danishigor/object-tracker": "@stable"
+
 Example:
+---
 ```php
 <?php
 
