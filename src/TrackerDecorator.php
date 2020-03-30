@@ -7,7 +7,7 @@ namespace DanishIgor\ObjectTracker;
  *
  * @package DanishIgor\ObjectTracker
  */
-class Tracker
+class TrackerDecorator
 {
     /**
      * @var object Tracked object.
