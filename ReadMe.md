@@ -55,7 +55,7 @@ Array
         (
             [0] => MethodName
             [1] => Parameters(param1tame:param1type; ... paramXname:paramXtype)
-            [2] => WorkTime(second)
+            [2] => WorkTime(seconds)
             [3] => WorkMemory(bytes)
         )
     [1] => Array

@@ -37,7 +37,7 @@ class TrackerDecorator
         $this->statistics[] = [
             'MethodName',
             'Parameters(param1tame:param1type; ... paramXname:paramXtype)',
-            'WorkTime(second)',
+            'WorkTime(seconds)',
             'WorkMemory(bytes)',
         ];
     }
