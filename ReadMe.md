@@ -20,6 +20,8 @@ Example:
 ```php
 <?php
 
+use DanishIgor\ObjectTracker\TrackerDecorator;
+
 class TestClass
 {
     private $storage;
@@ -39,9 +41,12 @@ class TestClass
     }
 }
 
-$tracker = new \DanishIgor\ObjectTracker\TrackerDecorator(new TestClass());
+/**
+ * @var TestClass|TrackerDecorator $decoratedTestClass Decorated object.
+ */
+$decoratedTestClass = new TrackerDecorator(new TestClass());
 
-$tracker->methodWithParams(
+$decoratedTestClass->methodWithParams(
     true,
     234,
     100.23,
@@ -53,9 +58,9 @@ $tracker->methodWithParams(
         return "test";
     }
 );
-$tracker->methodWithoutParams();
+$decoratedTestClass->methodWithoutParams();
 
-print_r($tracker->getTrackerStatistics());
+print_r($decoratedTestClass->getTrackerStatistics());
 ```
 
 Output:
